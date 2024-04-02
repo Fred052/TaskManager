@@ -9,12 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       Home()
+        Home()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(.bg)
             .preferredColorScheme(.light)
-}
-
-#Preview {
-    ContentView()
+    }
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
+    }
 }
